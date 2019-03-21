@@ -1,5 +1,5 @@
-#Método de Newton, pregunta programada exámen de Anális numérico
-#para Ingeniería I semestre 2019
+%Método de Newton, pregunta programada exámen de Anális numérico
+%para Ingeniería I semestre 2019
 
 function [root, iterations] = newton(f, fdiff, x0, tol)
   x = x0;

@@ -1,5 +1,5 @@
-#Método de Steffensen, pregunta programada exámen de Anális numérico
-#para Ingeniería I semestre 2019
+%Método de Steffensen, pregunta programada exámen de Anális numérico
+%para Ingeniería I semestre 2019
 
 function [root, iterations] = steffensen(f, x0, tol)
   x = x0;
