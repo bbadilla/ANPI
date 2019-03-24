@@ -7,6 +7,7 @@ function [root, iterations] = newton_steffensen(f, fdiff, x0, tol)
   e = tol + 1;
   iterations = 0;
   root = 0;
+  solHastaMomento = [];
   
   while abs(f(x)) >= tol
     x_ = x - (f(x) / fdiff(x));
@@ -20,8 +21,15 @@ function [root, iterations] = newton_steffensen(f, fdiff, x0, tol)
       root = x_new;
       
       iterations++;
+      solHastaMomento = [solHastaMomento, root];
     else
       iterations = "Failure";
+      disp("------------------------------------------------------------------------------------------------------------------------------------ ");
+      disp("El denomidanor en el metodo de newton steffensen  se hizo cero en la funcion: "), disp(f);
+      disp("Las raices obtenidas hasta el momento se presentan ordenadas segun su numero de iteracion");
+      disp(solHastaMomento);
+      disp("------------------------------------------------------------------------------------------------------------------------------------ ");
+      disp("  ");
       break;  
     endif
   endwhile
