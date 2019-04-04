@@ -30,6 +30,7 @@ function [root, iterations, error1] = ecuacion2(f, fdiff, x0, tol)
 
   iter = [1:iterations];
 
+  figure(2);
   subplot(2, 2, 1);
   plot(iter, rootz); 
   title('Ecuacion 15. Xk contra iteraciones');
