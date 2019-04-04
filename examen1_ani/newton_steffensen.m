@@ -1,5 +1,5 @@
-%Método de Newton-Steffensen, pregunta programada exámen de Anális numérico
-%para Ingeniería I semestre 2019
+%Mï¿½todo de Newton-Steffensen, pregunta programada exï¿½men de Anï¿½lis numï¿½rico
+%para Ingenierï¿½a I semestre 2019
 
 function [root, iterations] = newton_steffensen(f, fdiff, x0, tol)
   
@@ -10,6 +10,7 @@ function [root, iterations] = newton_steffensen(f, fdiff, x0, tol)
   solHastaMomento = [];
   
   while abs(f(x)) >= tol
+    f1 = f(x);
     x_ = x - (f(x) / fdiff(x));
     
     if (fdiff(x)) * (f(x) - f(x_)) != 0
