@@ -32,9 +32,13 @@ function [root, iterations, error1] = ecuacion1(f, fdiff, x0, tol)
 
   subplot(2, 2, 1);
   plot(iter, rootz); 
-  title('Xk contra iteraciones')
+  title('Ecuacion 13. Xk contra iteraciones');
+  xlabel('Iteraciones(k)', 'FontSize', 10);
+  ylabel('Xk', 'FontSize', 10);
 
   subplot(2, 1, 2);
   plot(iter, fks);
-  title('F(Xk) contra iteraciones')
+  title('Ecuacion 13. F(Xk) contra iteraciones');
+  xlabel('Iteraciones(k)', 'FontSize', 10);
+  ylabel('|F(Xk)|', 'FontSize', 10);
 endfunction
