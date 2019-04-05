@@ -1,3 +1,6 @@
+%% Método que utiliza la ecuación 13 del problema 1 de la tarea programada%%
+%% ANPI Semestre 1 2019 %%
+
 function [root, iterations, error1] = ecuacion1(f, fdiff, x0, tol)
   
   x = x0;
@@ -31,6 +34,7 @@ function [root, iterations, error1] = ecuacion1(f, fdiff, x0, tol)
   iter = [1:iterations];
 
   figure(1);
+
   subplot(2, 2, 1);
   plot(iter, rootz); 
   title('Ecuacion 13. Xk contra iteraciones');

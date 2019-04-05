@@ -1,3 +1,6 @@
+%% Despliega gr√°ficos y la soluci√≥n de la ecuaci√≥n f(x) = (sin(x) ^ 2) + x, utilizando m√©todos
+%% que utilizan las ecuaciones 13 y 15 del problema 1.
+
 clc; clear
 format long;
 
@@ -6,13 +9,13 @@ format long;
 
 display("----------------------------------------------------------------------------------------------------");
 
-dispLine1 = "Utilizando el mÈtodo 1, un cero de la funcion f(x) = (sin(x) ^ 2) + x est· dado por: ";
-dispLine2 = "\nEl mÈtodo 1 necesitÛ ";
-dispLine3 = " iteraciones, con un valor inicial de x_0 = 0.1 y una tolerancia de 10^-10\nDicha aproximaciÛn cumple que |f(";
+dispLine1 = "Utilizando el m√©todo 1, un cero de la funcion f(x) = (sin(x) ^ 2) + x est√° dado por: ";
+dispLine2 = "\nEl m√©todo 1 necesit√≥ ";
+dispLine3 = " iteraciones, con un valor inicial de x_0 = 0.1 y una tolerancia de 10^-10\nDicha aproximaci√≥n cumple que |f(";
 dispLine4 = ")| = ";
 
-dispLine12 = "Utilizando el mÈtodo 2, un cero de la funcion f(x) = (sin(x) ^ 2) + x est· dado por: ";
-dispLine22 = "\nEl mÈtodo 2 necesitÛ ";
+dispLine12 = "Utilizando el m√©todo 2, un cero de la funcion f(x) = (sin(x) ^ 2) + x est√° dado por: ";
+dispLine22 = "\nEl m√©todo 2 necesit√≥ ";
 
 display(cstrcat(dispLine1, num2str(r11), dispLine2, num2str(itm11), dispLine3, num2str(r11), dispLine4, num2str(e1)));
 
