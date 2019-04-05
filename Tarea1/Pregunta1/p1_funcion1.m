@@ -1,4 +1,4 @@
-%% Despliega gráficos y la solución de la ecuación f(x) = (sin(x) ^ 2) + x, utilizando métodos
+%% Despliega graficos y la solucion de la ecuación f(x) = (sin(x) ^ 2) + x, utilizando metodos
 %% que utilizan las ecuaciones 13 y 15 del problema 1.
 
 clc; clear

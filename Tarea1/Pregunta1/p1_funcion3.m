@@ -1,4 +1,4 @@
-%% Despliega gráficos y la solución de la ecuación f(x) = exp(-x) + sin(x) - 1, utilizando métodos
+%% Despliega gráficos y la solución de la ecuación f(x) = exp(-x) + sin(x) - 1, utilizando metodos
 %% que utilizan las ecuaciones 13 y 15 del problema 1.
 
 clc; clear
