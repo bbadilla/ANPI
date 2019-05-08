@@ -2,20 +2,20 @@ function imageMatrix = colToImage(colImage, row, col)
   
   imageMatrix = [];
 
-  for i = 1:row
+  for i = 1:col
     
-    row = [];
+    row2 = [];
     
-    for j = 1:col
+    for j = 1:row
       
-      row = [row colImage(3*(i-1)+j,1)];
+      row2 = [row2 colImage(row*(i-1)+j,1)];
       
     endfor
-    
-    imageMatrix = [imageMatrix ;row];
+        
+    imageMatrix = [imageMatrix , row2'];
     
   endfor
   
-  imageMatrix = imageMatrix';
+  imageMatrix = imageMatrix;
 
 endfunction
