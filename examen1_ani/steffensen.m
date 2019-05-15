@@ -18,6 +18,11 @@ function [root, iterations] = steffensen(f, x0, tol)
         
         if x_new == x
           iterations = "Failure"; 
+          disp("------------------------------------------------------------------------------------------------------------------------------------ ");
+          disp("Xk y Xk+1 son iguales en el metodo de steffensen en la funcion: "), disp(f);
+          disp("Por esta razon el metodo falla y no encuentra la raiz");
+          disp("------------------------------------------------------------------------------------------------------------------------------------ ");
+          disp("  ");
           break;
         endif
         
