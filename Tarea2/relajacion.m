@@ -21,12 +21,6 @@ while k <= N
             max = abs(C(i));
         end
     end
-    if(max < TOL)
-        X
-        A*X
-        B
-        return
-    end
     k = k + 1;
     XO = X;
 end

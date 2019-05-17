@@ -1,13 +1,11 @@
-function [a b c d] = traz_cubico(xi,yi)
+function [a b c d] = trazador_cubico(xi,yi)
   n = length(xi);
 
-  %Para calcular los valores de h
   h = zeros(1,n-1);
   for i=1:n-1
     h(i) = xi(i+1) - xi(i);
   endfor
 
-  %Para montar el sistema de ecuaciones
   A = zeros(n-2);
   b = zeros(1,n-2);
   S = zeros(1,n);
@@ -27,9 +25,8 @@ function [a b c d] = traz_cubico(xi,yi)
   A(n-2,n-2) = 2*(h(n-2)+h(n-1));
   b(n-2) = 6*((yi(n)-yi(n-1))/h(n-1) - (yi(n-1)-yi(n-2))/h(n-2));
   
-  %Resolucion del sistema de ecuaciones
   val_ini = zeros(1,length(b));
-  [xr iter] = relajacion(A,b',1,val_ini',200,0.0000001);
+  [xr] = relajacion(A,b',val_ini',0.0000001,200,1);
   
   for i=2: n-1 
     S(i) = xr(i-1);
@@ -38,11 +35,11 @@ function [a b c d] = traz_cubico(xi,yi)
   s(1) = 0;
   s(n) = 0;
   
-  # Coeficientes
   a = zeros(1,n-1);
   b = zeros(1,n-1);
   c = zeros(1,n-1);
   d = zeros(1,n-1);
+  
   for j = 1:n-1
     a(j) = (S(j+1)-S(j))/(6*h(j));
     b(j) = S(j)/2;
